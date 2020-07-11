@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding10dp"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/etHeight"
+        android:background="@drawable/et_background"
+        android:hint="Institute"
+        android:id="@+id/etInstitute"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:padding="@dimen/padding5dp"
+        android:textColor="@color/text_color_black"
+        android:textColorHint="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/etHeight"
+        android:layout_marginTop="@dimen/padding10dp"
+        android:background="@drawable/et_background"
+        android:hint="Course"
+        android:maxLines="1"
+        android:id="@+id/etCourse"
+        android:singleLine="true"
+        android:padding="@dimen/padding5dp"
+        android:textColor="@color/text_color_black"
+        android:textColorHint="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/etHeight"
+        android:layout_marginTop="@dimen/padding10dp"
+        android:background="@drawable/et_background"
+        android:hint="Specialization"
+        android:maxLines="1"
+        android:singleLine="true"
+
+        android:id="@+id/etSpecialization"
+
+        android:padding="@dimen/padding5dp"
+        android:textColor="@color/text_color_black"
+        android:textColorHint="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding10dp"
+        android:layout_weight="2.1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/etHeight"
+            android:layout_weight="1"
+            android:background="@drawable/et_background"
+            android:hint="Enrollment date"
+            android:paddingLeft="@dimen/padding10dp"
+            android:editable="false"
+            android:textColor="@color/text_color_black"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1" />
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/etHeight"
+            android:layout_weight="1"
+            android:background="@drawable/et_background"
+            android:hint="Passing date"
+            android:paddingLeft="@dimen/padding10dp"
+            android:editable="false"
+
+            android:textColor="@color/text_color_black"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10dp">
+
+    <LinearLayout
+        android:id="@+id/llDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Update Job Status"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeHeader"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/closeIconSize"
+                android:layout_height="@dimen/closeIconSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close_dialog" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:background="@color/viewLine" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_SelectStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:hint="Select job status"
+                        app:ms_background_color="@color/edittext_color"
+                        app:ms_background_drawable="@drawable/et_background"
+                        app:ms_hint_color="@color/text_color_black"
+                        app:ms_text_color="@color/text_color_black" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDone"
+                    android:layout_width="@dimen/buttonWidth"
+
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/padding10dp"
+                    android:layout_marginTop="@dimen/padding20dp"
+                    android:background="@drawable/lightbluebtn_roundedcorners"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:padding="@dimen/padding10dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeButton"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

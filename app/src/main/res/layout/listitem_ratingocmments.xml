@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/padding5dp"
+            android:layout_marginRight="@dimen/padding5dp"
+            android:layout_marginTop="@dimen/padding5dp"
+            android:background="@color/white"
+            android:elevation="@dimen/padding10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding5dp">
+
+            <com.securesurveillance.skili.utility.RoundedImageView
+                android:id="@+id/ivCandidate"
+                android:layout_width="@dimen/newcandidateProfileImageHeight"
+                android:layout_height="@dimen/newcandidateProfileImageHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/padding5dp"
+                android:layout_marginTop="@dimen/padding5dp"
+                android:src="@drawable/user_profile" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/ivCandidate"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding10dp"
+                android:paddingRight="@dimen/padding10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSizeHeader" />
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/tvName"
+                        android:background="@drawable/yellowbtn_corners"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:id="@+id/ivStar"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:src="@drawable/star_review" />
+
+                        <TextView
+                            android:id="@+id/tvRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ivStar"
+                            android:textColor="#FCCA00"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlName"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+
+
+            </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

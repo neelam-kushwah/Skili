@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/activity_common_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNext"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job title"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/etHeight"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:id="@+id/etJobtitle"
+                android:background="@drawable/et_background"
+                android:hint="e.g. Need singer for cafe"
+                android:maxLines="1"
+                android:padding="@dimen/padding5dp"
+                android:textColor="@color/text_color_black"
+                android:textColorHint="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Job Description"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:id="@+id/etJobDescription"
+                android:background="@drawable/et_background"
+                android:textColor="@color/text_color_black"
+                android:gravity="top|left"
+                android:padding="@dimen/padding5dp"
+                android:textColorHint="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Purpose of job"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/etHeight"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:background="@drawable/et_background"
+                android:id="@+id/etPurpose"
+                android:hint="e.g. Live Music"
+                android:maxLines="1"
+                android:padding="@dimen/padding5dp"
+                android:textColor="@color/text_color_black"
+                android:textColorHint="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding10dp"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:layout_weight="2.06"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/greybtn_roundedcorners"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbF"
+                        android:layout_width="@dimen/cbSize"
+                        android:layout_height="@dimen/cbSize"
+                        android:layout_marginRight="@dimen/padding5dp"
+
+                        android:background="@drawable/cb_selector"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full Time"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".06" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/greybtn_roundedcorners"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbP"
+                        android:layout_width="@dimen/cbSize"
+                        android:layout_height="@dimen/cbSize"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:background="@drawable/cb_selector"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Part Time"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/llDate"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:layout_weight="2.3">
+
+                <EditText
+                    android:id="@+id/etStartDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:hint="Start date"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" />
+
+                <EditText
+                    android:id="@+id/etEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:hint="End date"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/llTime"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:layout_weight="2.3">
+
+                <EditText
+                    android:id="@+id/etStartTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:hint="Start time"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" />
+
+                <EditText
+                    android:id="@+id/etEndTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:hint="End time"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/padding20dp"
+        android:text="1 / 2 steps"
+        android:textSize="@dimen/textSizeButton" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/buttonSmallHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/padding10dp"
+        android:layout_marginRight="@dimen/padding10dp"
+        android:layout_marginTop="@dimen/padding20dp"
+        android:background="@drawable/button_background_darkblue_rounded"
+        android:minHeight="1dp"
+        android:minWidth="1dp"
+        android:padding="@dimen/padding10dp"
+        android:text="NEXT"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeButton"
+        android:textStyle="bold" />
+</RelativeLayout>

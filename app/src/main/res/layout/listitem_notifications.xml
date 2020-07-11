@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newbg">
+
+
+    <RelativeLayout
+        android:id="@+id/rlCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newbg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10dp">
+
+        <RelativeLayout
+            android:id="@+id/rlName"
+            android:layout_width="@dimen/newcandidateProfileImageHeight"
+            android:layout_height="@dimen/newcandidateProfileImageHeight"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/tvLetter"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding10dp"
+            android:layout_marginRight="@dimen/padding10dp"
+            android:layout_toLeftOf="@+id/tvDate"
+            android:layout_toRightOf="@+id/rlName"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We found jobs at HCL and 1 other you may be interested in"
+                android:id="@+id/tvDescription"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+
+            <TextView
+                android:id="@+id/tvAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:layout_centerVertical="true"
+                android:text="VIEW JOBS"
+                android:textAllCaps="true"
+                android:textColor="@color/lightblue_button"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeExtraSmall" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewLineHeight"
+        android:layout_below="@+id/rlCardView"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="@dimen/padding10dp"
+        android:layout_marginRight="@dimen/padding10dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/viewLine" />
+</RelativeLayout>

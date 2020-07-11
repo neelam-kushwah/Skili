@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10dp">
+
+    <LinearLayout
+        android:id="@+id/llDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Update Personal Details"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeHeader"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/closeIconSize"
+                android:layout_height="@dimen/closeIconSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close_dialog" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:background="@color/viewLine" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding10dp"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.1"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etFirstName"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/etHeight"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_background"
+                                android:hint="First name"
+                                android:paddingLeft="@dimen/padding10dp"
+                                android:textColor="@color/text_color_black"
+                                android:textColorHint="@color/textColor"
+                                android:textSize="@dimen/textSize" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".1" />
+
+                            <EditText
+                                android:id="@+id/etLastName"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/etHeight"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_background"
+                                android:hint="Last name"
+                                android:paddingLeft="@dimen/padding10dp"
+
+                                android:textColor="@color/text_color_black"
+                                android:textColorHint="@color/textColor"
+                                android:textSize="@dimen/textSize" />
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/etHeight"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding5dp"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+
+                        <EditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/etHeight"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:editable="false"
+                            android:hint="Phone/Mobile no"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding5dp"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+
+                        <EditText
+                            android:id="@+id/etDOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/etHeight"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:editable="false"
+                            android:hint="Date of Birth"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding5dp"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+
+                        <EditText
+                            android:id="@+id/etWebUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/etHeight"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:hint="Web url"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding5dp"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+                        <EditText
+                            android:id="@+id/etOrganisation"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/etHeight"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:hint="Company name"
+                            android:maxLines="1"
+                            android:visibility="gone"
+                            android:padding="@dimen/padding5dp"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+                        <EditText
+                            android:id="@+id/etGSTN"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/etHeight"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:hint="GSTN"
+                            android:maxLines="1"
+                            android:visibility="gone"
+                            android:padding="@dimen/padding5dp"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete"
+                            android:layout_width="match_parent"
+                            android:minHeight="@dimen/etHeight"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:background="@drawable/et_background"
+                            android:drawableEnd="@drawable/geoicon"
+                            android:hint="e.g. Andheri , Malad"
+                            android:maxLines="3"
+                            android:padding="@dimen/padding5dp"
+                            android:popupBackground="@color/newbg"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="@dimen/textSize" />
+
+
+                        <TextView
+                            android:id="@+id/tvPayScaleLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding20dp"
+                            android:text="Pay scale in INR"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+                        <RelativeLayout
+                            android:id="@+id/tvPayMinMax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding10dp">
+
+                            <TextView
+                                android:id="@+id/textMin1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:textSize="@dimen/textSizeExtraSmall" />
+
+                            <TextView
+                                android:id="@+id/textMax1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:textSize="@dimen/textSizeExtraSmall" />
+                        </RelativeLayout>
+
+                        <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_color="@color/lightblue_button"
+                            app:bar_highlight_color="@color/darkblue_button"
+                            app:steps="100" />
+
+                        <RadioGroup
+                            android:id="@+id/rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/rbHourly"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:text="Hourly"
+                                android:textColor="@color/text_color_black"
+                                android:textSize="@dimen/textSize" />
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/rbMonthly"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Monthly"
+                                android:textColor="@color/text_color_black"
+
+                                android:textSize="@dimen/textSize" />
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/rbYearly"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="1"
+                                android:text="Yearly"
+                                android:textColor="@color/text_color_black"
+                                android:textSize="@dimen/textSize" />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDone"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/padding10dp"
+                    android:layout_marginTop="@dimen/padding20dp"
+                    android:background="@drawable/lightbluebtn_roundedcorners"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:padding="@dimen/padding10dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeButton"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

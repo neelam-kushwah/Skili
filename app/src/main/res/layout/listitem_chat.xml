@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newbg">
+
+
+    <RelativeLayout
+        android:id="@+id/rlCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newbg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding5dp">
+
+
+
+            <com.securesurveillance.skili.utility.RoundedImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:translationZ="@dimen/padding10dp" />
+
+        <LinearLayout
+            android:id="@+id/llChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding10dp"
+            android:layout_marginRight="@dimen/padding10dp"
+            android:layout_toLeftOf="@+id/tvDate"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aaron"
+                android:id="@+id/tvName"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:id="@+id/tvMessage"
+                android:singleLine="true"
+                android:text="Yes, you are right here!"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSizeExtraSmall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="10/13/2018"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeExtraSmall" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewLineHeight"
+        android:layout_below="@+id/rlCardView"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="@dimen/padding10dp"
+        android:layout_marginRight="@dimen/padding10dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/viewLine" />
+</RelativeLayout>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderParent"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/header_blue">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/navigationIconHeight"
+                android:layout_height="@dimen/navigationIconHeight"
+                android:layout_centerVertical="true"
+                android:src="@drawable/backicon" />
+
+            <ImageView
+                android:id="@+id/ivFav"
+                android:layout_width="@dimen/navigationIconHeight"
+                android:layout_height="@dimen/navigationIconHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding10dp"
+                android:src="@drawable/heart"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivShare"
+                android:layout_width="@dimen/navigationIconHeight"
+                android:layout_height="@dimen/navigationIconHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding10dp"
+                android:src="@drawable/sharewhite"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="@dimen/navigationIconHeight"
+                android:layout_height="@dimen/navigationIconHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding10dp"
+                android:src="@drawable/profiledots" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginLeft="@dimen/padding5dp"
+            android:padding="@dimen/padding5dp"
+            android:text="Need Singer for 2 days in sea side cafe"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeHeader" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJob"
+            android:layout_marginTop="@dimen/padding5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding10dp"
+            android:paddingRight="@dimen/padding10dp">
+
+            <com.securesurveillance.skili.utility.RoundedImageView
+                android:id="@+id/ivPic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_profile" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivPic"
+                android:text="Jaikant Seekre"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvName"
+                android:background="@drawable/yellowbtn_corners"
+                android:gravity="center_horizontal"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/ivStar"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding5dp"
+                    android:src="@drawable/star_rate" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivStar"
+                    android:text="5.0"
+                    android:textColor="#FCCA00"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAddSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_background_darkblue_rounded"
+
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding10dp"
+                android:paddingRight="@dimen/padding10dp">
+
+
+                <TextView
+                    android:id="@+id/tvPurpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Purpose: Live Music"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlHeaderParent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/rounded_white_background">
+
+        <LinearLayout
+            android:id="@+id/llBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2.01">
+
+            <TextView
+                android:id="@+id/tvBudget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding5dp"
+                android:text="10,000/-"
+                android:textColor="@color/budgetColor"
+                android:textSize="@dimen/textSizeHeader" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".01"
+                android:background="@color/viewLine" />
+
+            <TextView
+                android:id="@+id/tvDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding5dp"
+                android:text="2 DAYS"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textSizeHeader" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llBudget"
+            android:orientation="horizontal"
+            android:weightSum="2.01">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding5dp"
+
+                android:text="Job budget"
+                android:textColor="@color/budgetColor"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".01"
+                android:background="@color/viewLine" />
+
+            <TextView
+                android:id="@+id/tvDateRange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding5dp"
+                android:text="28 - 30 October"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textSizeExtraSmall" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:layout_below="@+id/llDate"
+            android:background="@color/viewLine" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding10dp">
+
+                <TextView
+                    android:id="@+id/tvProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Description"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+
+                <TextView
+                    android:id="@+id/tvProjectDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvProject"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Praesent vitae arcu tempor neque lacinia pretium. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed convallis magna eu sem. Suspendisse nisl. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Mauris dictum facilisis augue. Quisque porta. Duis risus. Praesent vitae arcu tempor neque lacinia pretium."
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+
+                <LinearLayout
+                    android:id="@+id/llMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvProjectDesc"
+                    android:layout_marginTop="@dimen/padding10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/ivGoogleMap"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/padding10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/staticmap" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ivGoogleMap"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="69 BinwaDdo, Betalbatim, Goa"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+                        <TextView
+                            android:id="@+id/tvGetDirection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding5dp"
+                            android:background="@drawable/greybtn_rounded"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="@dimen/padding5dp"
+                            android:paddingRight="@dimen/padding5dp"
+                            android:paddingTop="2dp"
+                            android:text="Get Direction"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/viewLineHeight"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/padding10dp"
+                        android:layout_marginLeft="@dimen/padding5dp"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:layout_marginTop="@dimen/padding10dp"
+                        android:background="@color/viewLine" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ivGoogleMap"
+                            android:layout_weight="1"
+                            android:text="Job Type"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivTime"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="@dimen/padding5dp"
+                                android:src="@drawable/blackparttime" />
+
+                            <TextView
+                                android:id="@+id/tvJobType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Part Time"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/textSizeExtraSmall" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSkill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llMap"
+                    android:layout_marginTop="@dimen/padding10dp"
+                    android:text="Skill Required"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSkill"
+                    android:layout_marginTop="@dimen/padding15dp"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="70dp"
+                    android:layout_height="@dimen/buttonExtraSmallHeight"
+                    android:layout_below="@+id/recyclerView"
+android:layout_alignParentRight="true"                    android:layout_margin="@dimen/padding10dp"
+                    android:background="@drawable/blue_button_background"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeButton"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerView"
+                    android:layout_margin="@dimen/padding10dp">
+
+                    <TextView
+                        android:id="@+id/tvApplied"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="1dp"
+                        android:minWidth="1dp"
+                        android:padding="@dimen/padding10dp"
+                        android:text="26 PEOPLE APPLIED"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSizeButton"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgApplied"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tvApplied"
+                        android:src="@drawable/right" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerJobApplied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlBottom"
+                    android:layout_marginTop="@dimen/padding15dp"
+                    android:background="@color/newbg" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

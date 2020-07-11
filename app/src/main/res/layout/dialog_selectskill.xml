@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10dp">
+
+    <LinearLayout
+        android:id="@+id/llDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Select Skill Categories"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeHeader"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/closeIconSize"
+                android:layout_height="@dimen/closeIconSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close_dialog" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:background="@color/viewLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding20dp"
+            android:orientation="vertical"
+            android:padding="@dimen/padding10dp">
+
+            <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_MainCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select main category"
+                app:ms_background_color="@color/edittext_color"
+                android:focusableInTouchMode="true"
+                app:ms_background_drawable="@drawable/et_background"
+                app:ms_hint_color="@color/text_color_black"
+                app:ms_text_color="@color/text_color_black" />
+
+            <com.securesurveillance.skili.materialspinner.MaterialSpinnerMultiple
+                android:id="@+id/spinner_SubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding15dp"
+                android:text="Select sub category"
+                app:ms_background_color="@color/edittext_color"
+                app:ms_background_drawable="@drawable/et_background"
+                app:ms_hint_color="@color/text_color_black"
+                app:ms_text_color="@color/text_color_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding10dp"
+                android:layout_marginTop="@dimen/padding15dp"
+                android:id="@+id/llTime"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/greybtn_roundedcorners"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:layout_width="@dimen/cbSize"
+                        android:layout_height="@dimen/cbSize"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:id="@+id/cbF"
+
+                        android:background="@drawable/cb_selector"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available Full Time"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/greybtn_roundedcorners"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:layout_width="@dimen/cbSize"
+                        android:layout_height="@dimen/cbSize"
+                        android:id="@+id/cbP"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:background="@drawable/cb_selector"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available Part Time"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding10dp"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:background="@drawable/lightbluebtn_roundedcorners"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:padding="@dimen/padding10dp"
+                android:text="DONE"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeButton"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

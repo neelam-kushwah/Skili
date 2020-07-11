@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="@dimen/padding5dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:text="text"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ivCamera"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/padding20dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/padding20dp"
+        android:id="@+id/ivVideo"
+        android:src="@drawable/video" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ivLink"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/padding20dp"
+        android:src="@drawable/link" />
+
+</LinearLayout>

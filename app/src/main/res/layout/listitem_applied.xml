@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/padding10dp"
+        android:background="@color/white"
+        android:elevation="@dimen/padding10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlCardView"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding5dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/rlJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rlApply">
+
+                    <TextView
+                        android:id="@+id/tvHeaderDesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senior Android Developer"
+                        android:textColor="@color/colorgradientstart"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/tvCompanyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvHeaderDesignation"
+                        android:text="Podium Systems Pvt Ltd."
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSizeButton" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding10dp">
+
+                    <Button
+                        android:id="@+id/btnApply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:minHeight="1dp"
+                        android:gravity="center_vertical"
+                        android:minWidth="1dp"
+                        android:text="Applied"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/textSizeButton" />
+
+                    <TextView
+                        android:id="@+id/tvPostedOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnApply"
+                        android:text="Yesterday"
+                        android:textColor="@color/textColorHint"
+                        android:textSize="@dimen/textSizeButton" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlJob"
+                    android:layout_marginTop="@dimen/padding10dp"
+                    android:text="3 to 5 yrs"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/textSizeButton" />
+                <TextView
+                    android:id="@+id/tvPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlJob"
+                    android:layout_toRightOf="@+id/tvExperience"
+                    android:layout_marginLeft="@dimen/padding10dp"
+                    android:layout_marginTop="@dimen/padding10dp"
+                    android:text="Pune"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/textSizeButton" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

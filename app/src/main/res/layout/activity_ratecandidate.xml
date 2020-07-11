@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/activity_common_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:padding="5dp">
+
+            <com.securesurveillance.skili.utility.RoundedImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/user_profile"
+                android:translationZ="@dimen/padding10dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding5dp"
+                android:text="Neelam Kushwah"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeHeader"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/star1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/star"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:id="@+id/star2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/star"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:id="@+id/star3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/star"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:id="@+id/star4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/star"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:id="@+id/star5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/star"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnSubmit"
+                android:layout_below="@+id/llStar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llStar"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading/Title"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSizeExtraSmall"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/etHeight"
+                        android:layout_marginTop="@dimen/padding20dp"
+                        android:background="@drawable/et_background"
+                        android:padding="@dimen/padding5dp"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSize"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding10dp"
+                        android:text="Write your review here"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSizeExtraSmall" />
+
+                    <EditText
+                        android:id="@+id/etFeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/padding10dp"
+                        android:background="@drawable/et_background"
+                        android:gravity="top|left"
+                        android:padding="@dimen/padding5dp"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/text_color_black"
+                        android:textSize="@dimen/textSize" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/padding10dp"
+                android:background="@drawable/button_background_rounded"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:padding="@dimen/padding10dp"
+                android:text="submit review"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeButton"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

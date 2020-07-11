@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/activity_common_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlBottom"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:padding="@dimen/padding10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Location"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:background="@drawable/et_background"
+                android:hint="e.g. Andheri , Malad"
+                android:maxLines="3"
+                android:minHeight="@dimen/etHeight"
+                android:padding="@dimen/padding5dp"
+                android:textColor="@color/text_color_black"
+                android:textColorHint="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Choose skills"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall"
+                android:visibility="gone" />
+
+            <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_MainCategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/etHeight"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:hint="Select main category"
+                android:textColorHint="@color/text_color_black"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone"
+                app:ms_background_color="@color/edittext_color"
+                app:ms_background_drawable="@drawable/et_background"
+                app:ms_hint_color="@color/text_color_black"
+                app:ms_text_color="@color/text_color_black" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlAddSkill"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/etHeight"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:background="@drawable/button_background_darkblue_rounded"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivAdd"
+                    android:layout_width="@dimen/edittextIconSize"
+                    android:layout_height="@dimen/edittextIconSize"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding5dp"
+                    android:src="@drawable/plusicon" />
+
+                <TextView
+                    android:id="@+id/tvSkillAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivAdd"
+                    android:text="ADD SKILL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeButton" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSkill"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Your Budget"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/rbHourly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Hourly"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/rbMonthly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Monthly"
+                    android:textColor="@color/text_color_black"
+
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/rbYearly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="Yearly"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Pay scale in INR"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/etHeight"
+                android:padding="@dimen/padding5dp"
+                android:id="@+id/etPay"
+                android:minWidth="60dp"
+                android:layout_gravity="right"
+                android:inputType="number"
+                android:background="@drawable/et_background"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/padding10dp">
+
+                <TextView
+                    android:id="@+id/textMin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+
+                <TextView
+                    android:id="@+id/textMax1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+            </RelativeLayout>
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_color="@color/lightblue_button"
+                app:bar_highlight_color="@color/darkblue_button"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding10dp"
+        android:layout_marginTop="@dimen/padding10dp"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding10dp"
+
+        >
+
+        <Button
+            android:id="@+id/btnDraft"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonSmallHeight"
+            android:layout_marginRight="@dimen/padding20dp"
+            android:background="@drawable/greybtn_rounded"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="@dimen/padding10dp"
+            android:text="Save as draft"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeButton"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPublish"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonSmallHeight"
+            android:layout_toRightOf="@+id/btnDraft"
+            android:background="@drawable/button_background_darkblue_rounded"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="@dimen/padding10dp"
+            android:text="Publish Job"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeButton"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

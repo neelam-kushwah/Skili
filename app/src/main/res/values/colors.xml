@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/lightblue_button</color>
+    <color name="colorPrimaryDark">@color/darkblue_button</color>
+    <color name="colorAccent">@color/lightblue_button</color>
+    <color name="grey_100">#F5F5F5</color>
+
+
+    <color name="colorgradientstart">@color/colorPrimaryDark</color>
+    <color name="colorgradientend">@color/colorPrimary</color>
+
+    <!--<color name="colorgradientstart">#4285F4</color>-->
+    <!--<color name="colorgradientend">#55B6FE</color>-->
+
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+    <!-- Dark Text Color for Light Background -->
+    <color name="textDarkPrimary">#DE000000</color> <!--DE for %87 opacity-->
+    <color name="textDarkSecondary">#8A000000</color> <!--8A for %54 opacity-->
+    <color name="textDarkDisabled">#61000000</color> <!--61 for %38 opacity-->
+
+    <!-- White Text Color for Dark Background -->
+    <color name="textLightPrimary">#FFFFFF</color> <!--%100 opacity-->
+    <color name="textLightSecondary">#B2FFFFFF</color> <!--B2 for %70 opacity-->
+    <color name="textLightDisabled">#80FFFFFF</color> <!--80 for %50 opacity-->
+    <color name="textLightDisabledDEPRECATED">#1AFFFFFF</color> <!--4C for %30 opacity-->
+
+
+    <!--Login Screen-->
+    <color name="offWhite">#F1F0EC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorOrange">@color/yellow</color>
+    <color name="pink">#EC5992</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewLine">#E1E1E1</color>
+    <color name="textColor">#666666</color>
+    <color name="textColorHint">#757575</color>
+    <color name="text_color_black">#000000</color>
+    <!--<color name="text_color_extra_dark_grey">#37474F</color>-->
+
+    <!-- General -->
+    <color name="about_item_icon_color">#313131</color>
+
+    <!-- Social -->
+    <color name="about_facebook_color">#3b5998</color>
+    <color name="about_twitter_color">#55acee</color>
+    <color name="about_instagram_color">#3f729b</color>
+    <color name="about_play_store_color">#45BBC2</color>
+    <color name="about_youtube_color">#cd201f</color>
+    <color name="about_github_color">#333333</color>
+    <!-- General -->
+    <color name="about_background_color">@color/white</color>
+    <color name="about_separator_color">#494949</color>
+
+    <!-- Text -->
+    <color name="about_description_text_color">#37474F</color>
+    <color name="about_item_text_color">#FFFFFF</color>
+    <color name="about_text_color">#37474F</color>
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+
+<!--
+    new colors
+-->
+    <color name="newbg">#F9F9F9</color>
+    <color name="lightblue">#f4f8f9</color>
+    <color name="yellow">#FFFC00</color>
+    <color name="orange">#f15021</color>
+    <color name="edittext_color">#E1E1E1</color>
+    <color name="darkblue_button">#3191F7</color>
+    <color name="lightblue_button">#2ECAFB</color>
+    <color name="darkgrey">#555555</color>
+    <color name="dialog_transparent">#1A000000</color>
+    <color name="closecolor">#1AB9EB</color>
+    <color name="tabbackground_color">#242424</color>
+    <color name="gridBgColor">#D9D9D9</color>
+    <color name="cancelColor">#FA9145</color>
+    <color name="budgetColor">#7CB805</color>
+    <color name="completeColor">#46DF95</color>
+    <color name="graybuttonColor">#505050</color>
+    <color name="acceptGreenColor">#7EB902</color>
+    <color name="saveColor">#A1A1A1</color>
+</resources>

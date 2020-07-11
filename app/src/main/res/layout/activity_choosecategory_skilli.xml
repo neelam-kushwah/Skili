@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/header_blue"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_mark" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding10dp">
+
+        <TextView
+            android:id="@+id/tvIam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="I AM A"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/textSizeHeader"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnJobSeeker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIam"
+            android:layout_marginTop="@dimen/padding20dp"
+            android:background="@drawable/lightbluebtn_roundedcorners"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="@dimen/padding10dp"
+            android:text="Job Seeker"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeButton"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRecruiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnJobSeeker"
+            android:layout_marginTop="@dimen/padding20dp"
+            android:background="@drawable/lightbluebtn_roundedcorners"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="@dimen/padding10dp"
+            android:text="Recruiter"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeButton"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnBoth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRecruiter"
+            android:layout_marginTop="@dimen/padding20dp"
+            android:background="@drawable/lightbluebtn_roundedcorners"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="@dimen/padding10dp"
+            android:text="Both"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeButton"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

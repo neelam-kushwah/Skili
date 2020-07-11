@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlChild"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding10dp"
+        android:layout_marginRight="@dimen/padding10dp"
+        android:background="@drawable/lightbluebtn_corners"
+        android:paddingLeft="@dimen/padding5dp">
+
+        <TextView
+            android:id="@+id/tvSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rlClose"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="SINGER"
+            android:textColor="@color/lightblue_button"
+            android:textSize="@dimen/textSizeExtraSmall" />
+
+        <RelativeLayout
+            android:id="@+id/rlClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="@dimen/padding15dp">
+
+            <ImageView
+                android:layout_width="@dimen/closeCategorySize"
+                android:layout_height="@dimen/closeCategorySize"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

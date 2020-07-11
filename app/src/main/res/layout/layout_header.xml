@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigationToolbarHeight"
+        android:background="@drawable/toolbargradient"
+        android:padding="@dimen/padding10dp">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/navigationIconHeight"
+            android:layout_height="@dimen/navigationIconHeight"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding15dp"
+            android:layout_toRightOf="@+id/ivMenu"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeHeader" />
+
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="@dimen/navigationIconHeight"
+            android:layout_height="@dimen/navigationIconHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notification" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/hotlist_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ivRight"
+            android:layout_alignTop="@id/ivRight"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/rounded_square"
+            android:gravity="center"
+            android:minWidth="17sp"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

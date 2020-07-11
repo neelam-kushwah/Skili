@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbg"
+    android:padding="@dimen/padding5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading/Title"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/etHeight"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:background="@drawable/et_background"
+                android:padding="@dimen/padding5dp"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Write your suggestion / feedback here"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <EditText
+                android:id="@+id/etFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/padding10dp"
+                android:background="@drawable/et_background"
+                android:gravity="top|left"
+                android:padding="@dimen/padding5dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/text_color_black"
+                android:textSize="@dimen/textSize" />
+
+            <RelativeLayout
+                android:id="@+id/rlAddSkill"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/etHeight"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:background="@drawable/button_background_darkblue_rounded"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivAdd"
+                    android:layout_width="@dimen/edittextIconSize"
+                    android:layout_height="@dimen/edittextIconSize"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding5dp"
+                    android:src="@drawable/plusicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivAdd"
+                    android:text="BROWSE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeButton" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding5dp"
+                android:text="Note : Upload image or screenshot"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSizeExtraSmall" />
+
+            <ImageView
+                android:id="@+id/ivThumbNail"
+                android:layout_width="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/padding10dp"
+            android:background="@drawable/button_background_rounded"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="@dimen/padding10dp"
+            android:text="submit feedback"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/textSizeButton"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

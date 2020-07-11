@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="padding5dp">5dp</dimen>
+
+    <dimen name="padding10dp">10dp</dimen>
+    <dimen name="padding15dp">15dp</dimen>
+    <dimen name="padding20dp">20dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
+
+    <dimen name="button_horizontal_margin">8dp</dimen>
+    <dimen name="logoHeight">80dp</dimen>
+    <dimen name="logoWidth">180dp</dimen>
+    <dimen name="textSizeHeader">19sp</dimen>
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="buttonHeight">43dp</dimen>
+    <dimen name="buttonSmallHeight">38dp</dimen>
+    <dimen name="buttonSmallWidth">140dp</dimen>
+    <dimen name="buttonWidth">160dp</dimen>
+    <dimen name="buttonLargeWidth">180dp</dimen>
+    <dimen name="buttonExtraSmallHeight">32dp</dimen>
+
+    <dimen name="etHeight">40dp</dimen>
+    <dimen name="etWidth">300dp</dimen>
+    <dimen name="textSizeButton">16sp</dimen>
+    <dimen name="textSizeExtraSmall">12sp</dimen>
+    <dimen name="about_icon_size">34dp</dimen>
+    <dimen name="about_icon_padding">8dp</dimen>
+    <dimen name="about_text_padding">8dp</dimen>
+    <dimen name="about_group_text_padding">16dp</dimen>
+    <dimen name="about_separator_height">0.5dp</dimen>
+    <dimen name="onboarding_icon_size">160dp</dimen>
+    <dimen name="about_description_text_size">16sp</dimen>
+    <dimen name="about_item_text_size">16sp</dimen>
+    <dimen name="about_group_item_text_size">18sp</dimen>
+    <dimen name="viewLineHeight">1dp</dimen>
+    <dimen name="sliderIconHeight">22dp</dimen>
+    <dimen name="sliderNavigationHeight">140dp</dimen>
+    <dimen name="navigationIconHeight">24dp</dimen>
+    <dimen name="navigationToolbarHeight">48dp</dimen>
+    <dimen name="sliderProfileImageHeight">100dp</dimen>
+    <dimen name="candidateProfileImageHeight">60dp</dimen>
+    <dimen name="sliderWidth">260dp</dimen>
+    <dimen name="newcandidateProfileImageHeight">50dp</dimen>
+    <dimen name="pager_dot_size">8dp</dimen>
+    <dimen name="pager_height">16dp</dimen>
+    <dimen name="edittextIconSize">15dp</dimen>
+    <dimen name="closeIconSize">30dp</dimen>
+    <dimen name="closeCategorySize">10dp</dimen>
+    <dimen name="minusMargin15">-20dp</dimen>
+    <dimen name="minusMargin35">-35dp</dimen>
+    <dimen name="cbSize">25dp</dimen>
+    <dimen name="ms__padding_left">24dp</dimen>
+    <dimen name="ms__padding_top">12dp</dimen>
+    <dimen name="ms__item_height">48dp</dimen>
+    <dimen name="ms__popup_padding_left">24dp</dimen>
+    <dimen name="ms__popup_padding_top">12dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">15dp</dimen>
+
+</resources>

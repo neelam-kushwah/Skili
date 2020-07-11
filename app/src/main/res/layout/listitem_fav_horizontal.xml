@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/padding5dp"
+            android:layout_marginRight="@dimen/padding5dp"
+            android:layout_marginTop="@dimen/padding5dp"
+            android:background="@color/white"
+            android:elevation="@dimen/padding10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding5dp">
+
+                <com.securesurveillance.skili.utility.RoundedImageView
+                    android:id="@+id/ivCandidate"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:layout_marginBottom="@dimen/padding5dp"
+                    android:layout_width="@dimen/newcandidateProfileImageHeight"
+                    android:layout_height="@dimen/newcandidateProfileImageHeight"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/user_profile" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/padding10dp"
+                    android:layout_toLeftOf="@+id/llRight"
+                    android:layout_toRightOf="@+id/ivCandidate"
+                    android:paddingLeft="@dimen/padding10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textSizeHeader" />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/tvName"
+                            android:background="@drawable/yellowbtn_corners"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:id="@+id/ivStar"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/padding5dp"
+                                android:src="@drawable/star_rate" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvRating"
+                                android:layout_toRightOf="@+id/ivStar"
+                                android:textColor="#FCCA00"
+                                android:textSize="@dimen/textSizeExtraSmall" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlPriceKM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlName"
+                        android:layout_marginTop="@dimen/padding5dp">
+
+                        <ImageView
+                            android:id="@+id/ivKm"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:src="@drawable/mappin_skilli" />
+
+
+                        <TextView
+                            android:id="@+id/tvDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ivKm"
+                            android:maxLength="6"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+                        <ImageView
+                            android:id="@+id/ivDistance"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding20dp"
+
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:layout_toRightOf="@+id/tvDistance"
+                            android:src="@drawable/rs_symbol" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ivDistance"
+                            android:id="@+id/tvPrice"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRight"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true">
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/rlMessage"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ivMessage"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/fav_msg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ivMessage"
+                            android:layout_marginTop="@dimen/padding5dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="MESSAGE"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/padding10dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ivClose"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/fav_remove" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ivClose"
+                            android:layout_marginTop="@dimen/padding5dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="REMOVE"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabbackground_color"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbargradient">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding15dp">
+
+            <com.securesurveillance.skili.utility.RoundedImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/newcandidateProfileImageHeight"
+                android:layout_height="@dimen/newcandidateProfileImageHeight"
+                android:src="@drawable/user_profile" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10dp"
+                android:layout_toRightOf="@+id/imgProfile">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="@dimen/padding10dp"
+                    android:text="Selena"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeHeader" />
+
+                <TextView
+                    android:id="@+id/tvUserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvUserName"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/padding10dp"
+                    android:text="neelam.kushwah@ril.com"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/newcandidateProfileImageHeight"
+        android:layout_height="@dimen/newcandidateProfileImageHeight"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ivLogout"
+        android:layout_marginTop="@dimen/minusMargin15"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginRight="@dimen/padding20dp"
+        android:src="@drawable/logout" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivLogout"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNext"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivWeb"
+                    android:layout_width="20dp"
+                    android:visibility="gone"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/trash" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivWeb"
+                    android:text="PRIVACY"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:text="Who can see my .."
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/textSize"
+
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp">
+
+                <TextView
+                    android:id="@+id/tvSee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Posts                                  "
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_MainCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/etHeight"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding15dp"
+                    android:layout_toRightOf="@+id/tvSee"
+                    android:hint="Select main category"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+                    app:ms_background_color="@color/edittext_color"
+                    app:ms_background_drawable="@drawable/et_background"
+                    app:ms_hint_color="@color/text_color_black"
+                    app:ms_text_color="@color/text_color_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp">
+
+                <TextView
+                    android:id="@+id/tvSeeMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Mobile                              "
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_MainCategoryMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/etHeight"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding15dp"
+                    android:layout_toRightOf="@+id/tvSeeMobile"
+                    android:hint="Select main category"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+                    app:ms_background_color="@color/edittext_color"
+                    app:ms_background_drawable="@drawable/et_background"
+                    app:ms_hint_color="@color/text_color_black"
+                    app:ms_text_color="@color/text_color_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp">
+
+                <TextView
+                    android:id="@+id/tvSeeEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Email                                "
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_MainCategoryEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/etHeight"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding15dp"
+                    android:layout_toRightOf="@+id/tvSeeEmail"
+                    android:hint="Select main category"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+                    app:ms_background_color="@color/edittext_color"
+                    app:ms_background_drawable="@drawable/et_background"
+                    app:ms_hint_color="@color/text_color_black"
+                    app:ms_text_color="@color/text_color_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp">
+
+                <TextView
+                    android:id="@+id/tvSeeAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Address                            "
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <com.securesurveillance.skili.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_MainCategoryAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/etHeight"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding15dp"
+                    android:layout_toRightOf="@+id/tvSeeAddress"
+                    android:hint="Select main category"
+                    android:textColorHint="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+                    app:ms_background_color="@color/edittext_color"
+                    app:ms_background_drawable="@drawable/et_background"
+                    app:ms_hint_color="@color/text_color_black"
+                    app:ms_text_color="@color/text_color_black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewLineHeight"
+                android:layout_marginBottom="@dimen/padding20dp"
+                android:layout_marginTop="@dimen/padding20dp"
+                android:background="@color/viewLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Receive SMS"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleReceiveSms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Receive Email"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleReceiveEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding20dp">
+
+                <TextView
+                    android:id="@+id/tvActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Active as Recruiter"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleRecruiter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+
+        android:elevation="@dimen/padding10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding20dp"
+                    android:text="ACCOUNT"
+                    android:textSize="@dimen/textSizeButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:paddingLeft="@dimen/padding20dp"
+                    android:text="Deactivate my account"
+                    android:textSize="@dimen/textSizeButton" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivJob"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/notificationsettings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivJob"
+                android:text="Job Updates"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:layout_marginBottom="@dimen/padding10dp"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@color/viewLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivRecruiter"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/accountsettings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivRecruiter"
+                android:text="Recruiter Updates"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:layout_marginBottom="@dimen/padding10dp"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@color/viewLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivGeneral"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/passwordsetting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivGeneral"
+                android:text="General Updates"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:layout_marginBottom="@dimen/padding10dp"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@color/viewLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivApplication"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/notificationsettings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivApplication"
+                android:text="Application Status"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding15dp"
+        android:background="@color/colorOrange"
+        android:minHeight="1dp"
+        android:minWidth="1dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeButton" />
+
+</RelativeLayout>

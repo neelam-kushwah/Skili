@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/padding5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlNotification"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/notificationsettings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivNotification"
+                android:text="Notification Settings"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:layout_marginBottom="@dimen/padding10dp"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@color/viewLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlAccountSettings"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivAccount"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/accountsettings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivAccount"
+                android:textColor="@color/textColor"
+
+                android:text="Account Settings"
+                android:textSize="@dimen/textSize" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewLineHeight"
+            android:layout_marginBottom="@dimen/padding10dp"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@color/viewLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlChangePassword"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding5dp">
+
+            <ImageView
+                android:id="@+id/ivChangePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="@dimen/padding15dp"
+                android:src="@drawable/passwordsetting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivChangePassword"
+                android:textColor="@color/textColor"
+
+                android:text="Change Password"
+                android:textSize="@dimen/textSize" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "431566608119",
+    "firebase_url": "https://skili-627e1.firebaseio.com",
+    "project_id": "skili-627e1",
+    "storage_bucket": "skili-627e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431566608119:android:ca0c58b4ff84961c",
+        "android_client_info": {
+          "package_name": "com.securesurveillance.skili"
+//          "package_name": "com.securesurveillance.skili.staging"
+
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431566608119-0der6m4qjjb0d1okghli697d7m8fs5li.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.securesurveillance.skili",
+            "certificate_hash": "414fa928aecf930fcbe1edac981dd875ca483232"
+          }
+        },
+        {
+          "client_id": "431566608119-857f9uvt5cectfudmo984ggtgjkfs60v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTpkOFtvOn1XqB6wpICmfNosfAbUE0_Z4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431566608119-857f9uvt5cectfudmo984ggtgjkfs60v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding5dp"
+        android:layout_marginLeft="@dimen/padding5dp"
+        android:layout_marginRight="@dimen/padding5dp"
+        android:layout_marginTop="@dimen/padding5dp"
+        android:background="@color/white"
+        android:elevation="@dimen/padding10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivEdit"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Om Labs"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="March 2012 - Feb 2017"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:text="description sejkfsekjv vslshvlw khlksflw lwehglw"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSizeExtraSmall" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding5dp"
+                android:layout_marginRight="@dimen/padding10dp"
+                android:layout_toLeftOf="@+id/rlDelete"
+                android:src="@drawable/edit" />
+
+            <RelativeLayout
+                android:id="@+id/rlDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/gray_button_background"
+                android:clickable="false"
+                android:hapticFeedbackEnabled="true"
+                android:padding="@dimen/padding5dp"
+                android:translationZ="@dimen/buttonHeight">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/trash" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

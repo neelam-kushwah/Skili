@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/padding5dp"
+            android:layout_marginLeft="@dimen/padding5dp"
+            android:layout_marginRight="@dimen/padding5dp"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@color/white"
+            android:elevation="@dimen/padding10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlCardView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:paddingRight="@dimen/padding5dp"
+
+                >
+
+                <View
+                    android:id="@+id/viewColor"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:id="@+id/rlArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/rlBudget"
+                    android:layout_toRightOf="@+id/viewColor"
+                    android:padding="@dimen/padding5dp">
+
+                    <TextView
+                        android:id="@+id/tvJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Need singer for 2 days in cafe"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSizeHeader" />
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvJob"
+                        android:layout_marginTop="@dimen/padding5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/textSizeExtraSmall" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlPriceKM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDesc"
+                        android:layout_marginTop="@dimen/padding5dp">
+
+
+                        <TextView
+                            android:id="@+id/tvCancelled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:text="Cancelled"
+                            android:textColor="@color/cancelColor"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+                        <ImageView
+                            android:id="@+id/ivTime"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:layout_toRightOf="@+id/tvCancelled" />
+
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:layout_toRightOf="@+id/ivTime"
+
+                            android:text="Part Time"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+                        <ImageView
+                            android:id="@+id/ivKm"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:layout_toRightOf="@+id/tvTime"
+                            android:src="@drawable/mappin_skilli" />
+
+
+                        <TextView
+                            android:id="@+id/tvPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ivKm"
+                            android:text="Goa,India"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/padding5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvRs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="10K"
+                        android:textColor="@color/budgetColor"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tvBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvRs"
+                        android:layout_centerHorizontal="true"
+                        android:text="BUDGET"
+                        android:textColor="@color/budgetColor"
+                        android:textSize="@dimen/textSizeExtraSmall" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

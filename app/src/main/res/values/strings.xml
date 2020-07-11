@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Skili</string>
+    <!--<string name="app_name">Skili_QA</string>-->
+    <!--choose-->
+    <string name="comapnyOwner">Company</string>
+    <string name="recruiter">Recruiter</string>
+    <string name="individual">Individual</string>
+    <string name="about_page_description" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula ligula tortor, in pellentesque dui congue ac. Vestibulum lacinia urna magna, quis cursus ante iaculis nec. Nunc ut ligula sit amet odio ultrices euismod vel vel purus. Sed lacus mauris, aliquam et placerat id</string>
+    <string name="about_contact_us">Contact us</string>
+    <string name="about_instagram">Follow us on Instagram</string>
+    <string name="about_facebook">Like us on Facebook</string>
+    <string name="about_play_store">Rate us on the Play Store</string>
+    <string name="about_youtube">Watch us on Youtube</string>
+    <string name="about_twitter">Follow us on Twitter</string>
+    <string name="about_github">Fork us on GitHub</string>
+    <string name="about_website">Visit our website</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="fragment_Tag">SliderTag</string>
+    <string name="phone_title_text">Phone Number</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="FACEBOOK_APP_ID">421272295343307</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">d093520bb88bb065fa321859d4e04341</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="signed_in">Signed In</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!--<string name="FACEBOOK_APP_ID">480411719052666</string>-->
+    <!--<string name="ACCOUNT_KIT_CLIENT_TOKEN">ccf82752697ae73c1d641b9af87e6036</string>-->
+    <!-- -API Error Messages -->
+    <string name="bad_Request">Bad Request</string>
+    <string name="unauthorized_user">Unauthorized user.</string>
+    <string name="page_not_found">Page not found.</string>
+    <string name="something_went_wrong_on_server">Something went wrong on server.</string>
+    <string name="something_went_wrong">Something went wrong.</string>
+    <!--NETWORK ERROR MESSAGE -->
+    <string name="err_msg_network_not_found"> Network not found. Please check your network settings.</string>
+    <!-- -Fragment Name and Tags -->
+    <string name="UNKNOWN_HOST">Unable to connect to the server. Please check your internet connection and try again.</string>
+    <string name="SOCKET_TIME_OUT">Connection time out. Please try again.</string>
+    <string name="JSON_SYNTAX">Parsing syntax error.</string>
+    <string name="UNABLE_TO_CONNECT">Unable to connect to the server. Please try again or later.</string>
+    <string name="UNKNOWN_ERROR">Something went wrong.</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="cancel_">Cancel</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="permission_denied_you_cannot_read_external_storage">Permission Denied, You can\'t read external storage.</string>
+    <string name="permission_denied_you_cannot_access_camera">Permission Denied, You can\'t access camera.</string>
+
+    <string name="unable_to_get_image_from_gallery">Unable to get image from gallery.</string>
+    <string name="image_loading_cancelled_by_user">Image loading cancelled by user.</string>
+    <string name="sorry_failed_to_capture_image">Sorry! Failed to capture image.</string>
+    <string name="getting_image">Getting image</string>
+    <string name="image_loading_failed_please_try_again">Image loading failed. Please try again.</string>
+    <string name="rssymbol">\u20B9</string>
+
+    <string name="google_maps_key">AIzaSyDPFjRVRPEL0Mhqwd5NrJzi5FzmjtFOONg</string>
+
+    <string name="terms_condition"><u>Please accept terms and conditions</u></string>
+</resources>

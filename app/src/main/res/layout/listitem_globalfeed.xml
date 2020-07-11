@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/padding5dp"
+            android:layout_marginLeft="@dimen/minusMargin15"
+            android:layout_marginRight="@dimen/padding5dp"
+            android:layout_marginTop="@dimen/padding5dp"
+            android:layout_toRightOf="@+id/ivCandidate"
+            android:background="@color/white"
+            android:elevation="@dimen/padding10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding20dp"
+                android:padding="@dimen/padding5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSizeHeader" />
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding20dp"
+                        android:layout_toRightOf="@+id/tvName"
+                        android:background="@drawable/yellowbtn_corners"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:id="@+id/ivStar"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding5dp"
+                            android:src="@drawable/star_rate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ivStar"
+                            android:id="@+id/tvRating"
+                            android:textColor="#FCCA00"
+                            android:textSize="@dimen/textSizeExtraSmall" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPriceKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlName"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <ImageView
+                        android:id="@+id/ivKm"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:src="@drawable/mappin_skilli" />
+
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ivKm"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/padding20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSizeExtraSmall" />
+
+                    <ImageView
+                        android:id="@+id/ivRs"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:layout_toRightOf="@+id/tvDistance"
+                        android:src="@drawable/rs_symbol" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvCharge"
+                        android:layout_toRightOf="@+id/ivRs"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSizeExtraSmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlPriceKM"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+
+                    <TextView
+                        android:id="@+id/tvConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="+ CHAT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightblue_button"
+                        android:textSize="@dimen/textSizeButton" />
+
+                    <ImageView
+                        android:id="@+id/ivViews"
+                        android:layout_width="10dp"
+                        android:layout_toRightOf="@+id/tvConnect"
+                        android:layout_marginLeft="@dimen/padding20dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/padding5dp"
+                        android:src="@drawable/views_skilli" />
+
+                    <TextView
+                        android:id="@+id/tvView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ivViews"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/textSizeExtraSmall" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.securesurveillance.skili.utility.RoundedImageView
+            android:id="@+id/ivCandidate"
+            android:layout_width="@dimen/candidateProfileImageHeight"
+            android:layout_height="@dimen/candidateProfileImageHeight"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_profile"
+            android:translationZ="@dimen/padding20dp" />
+    </RelativeLayout>
+</RelativeLayout>

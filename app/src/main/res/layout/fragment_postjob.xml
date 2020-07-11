@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etDesignation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Designation"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etMinExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Minimum Experience"
+
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etMaxExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Maximum Experience"
+                        android:inputType="number"
+                        android:maxLines="1"
+
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etCTCType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="CTC Type (1 for PA, 2 for per hour, 3 for per day)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Location"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etMinSalary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Minimum Salary"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etMaxSalary"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:hint="Maximum Salary"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etSkills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Skills"
+                        android:maxLines="5"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewLineHeight"
+                android:background="@color/viewLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/textSize" />
+
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:hint="Job Description"
+                    android:maxLines="1"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding10dp"
+                    android:text="Employer Details"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company Name"
+                        android:maxLines="5"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding10dp"
+                    android:text="Other Details"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <EditText
+                        android:id="@+id/etFunctionalArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="functional Area"
+                        android:maxLines="5"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etIndustry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Industry Served"
+                        android:maxLines="5"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other skills"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/textSizeButton" />
+
+                    <EditText
+                        android:id="@+id/etOtherSkills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding5dp"
+                        android:hint="Other Skills"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding15dp"
+        android:background="@color/colorOrange"
+        android:minHeight="1dp"
+        android:minWidth="1dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeButton" />
+</RelativeLayout>
